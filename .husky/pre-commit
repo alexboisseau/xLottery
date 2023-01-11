@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm run format # format ./src folder using prettier
+npm run lint # lint .src folder using eslint
