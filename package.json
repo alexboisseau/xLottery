@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "lint": "eslint ./src/ --ext .js,.ts,.jsx,.tsx -c .eslintrc.json",
     "prepare": "husky install",
-    "format": "prettier ./src --write"
+    "format": "prettier ./src --write",
+    "commit": "cz"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -21,12 +22,18 @@
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
     "@vitejs/plugin-react": "^3.0.0",
+    "cz-conventional-changelog": "3.3.0",
     "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-react": "^7.32.0",
+    "husky": "^8.0.0",
     "prettier": "2.8.2",
     "typescript": "^4.9.3",
-    "vite": "^4.0.0",
-    "husky": "^8.0.0"
+    "vite": "^4.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
