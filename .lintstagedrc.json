@@ -1,0 +1,6 @@
+{
+  "*.js": ["prettier --list-different", "eslint"],
+  "*.ts": ["prettier --list-different", "eslint"],
+  "*.jsx": ["prettier --list-different", "eslint"],
+  "*.tsx": ["prettier --list-different", "eslint"]
+}
